@@ -1,0 +1,27 @@
+$primary-color: #CCCCCC;
+
+.Ingredient {
+    display: flex;    
+    li {
+        padding-top: 2px;
+        margin-left: 10px;
+        list-style: none;
+    }
+    button {
+        padding: 0px 7px 0px 7px;
+        margin: 0;
+    }
+    .RemoveIngredient {
+        height: 18px;
+        width: 18px;
+        background-color: $primary-color;
+        color: #424242;
+        padding: 2px 3px 7px 7px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-radius: 4px;
+        &:active {
+            transform: translate(0.7px, 0.7px);
+        }
+    }
+}

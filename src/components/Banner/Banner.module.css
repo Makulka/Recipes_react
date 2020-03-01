@@ -1,0 +1,119 @@
+.Banner {
+    margin: 0;
+    position: relative;
+}
+
+.Banner img {
+    margin: 0 auto;
+    display: block;
+}
+.Bubble20_1 {
+    position: absolute;
+    top: 33%;
+    left: 52%;
+    opacity:0;
+    animation-name: Bubble20_1Animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.75s;
+}
+
+.Bubble20_2 {
+    position: absolute;
+    top: 33%;
+    left: 48%;
+    opacity:0;
+    animation-name: Bubble20_2Animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.25s;
+}
+
+.Bubble20_3 {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    opacity:0;
+    animation-name: Bubble20_2Animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+
+.Bubble20_4 {
+    position: absolute;
+    top: 33%;
+    left: 51%;
+    opacity:0;
+    animation-name: Bubble20_2Animation;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Bubble20_1Animation {
+    0% {
+        transform: translate(0%, 0%) rotate(0deg);
+        opacity: 1;
+    }
+    12.5% {
+        transform: translate(25%, -75%) rotate(45deg);        
+    }
+    25% {
+        transform: translate(50%, -100%) rotate(0deg);
+    }
+    37.5% {
+        transform: translate(75%, -150%) rotate(-45deg);
+    }
+    50% {
+        transform: translate(100%, -200%) rotate(0deg);        
+    }
+    62.5% {
+        transform: translate(75%, -250%) rotate(45deg);
+    }
+    75% {
+        transform: translate(50%, -300%) rotate(0deg);
+    }
+    87.5% {
+        transform: translate(25%, -350%) rotate(-45deg);
+    }
+    100% {
+        transform: translate(0%, -400%) rotate(0deg);
+        opacity: 0;
+    }
+} 
+
+@keyframes Bubble20_2Animation {
+    0% {
+        transform: translate(0%, 0%) rotate(0deg);
+        opacity: 1;
+    }
+    12.5% {
+        transform: translate(-10%, -75%) rotate(-45deg);        
+    }
+    25% {
+        transform: translate(-40%, -100%) rotate(0deg);
+    }
+    37.5% {
+        transform: translate(-60%, -150%) rotate(45deg);
+    }
+    50% {
+        transform: translate(-80%, -200%) rotate(0deg);        
+    }
+    62.5% {
+        transform: translate(-50%, -250%) rotate(-45deg);
+    }
+    75% {
+        transform: translate(-20%, -300%) rotate(0deg);
+    }
+    87.5% {
+        transform: translate(-5%, -350%) rotate(45deg);
+    }
+    100% {
+        transform: translate(0%, -400%) rotate(0deg);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,18 @@
+$primary-color: #CCCCCC;
+
+.NavigationItem {
+    list-style: none;
+    padding: 0;
+    font-family: roboto;  
+}
+
+.Active {
+    background-color: $primary-color;
+}
+
+.NavigationItem a {
+    text-decoration: none;
+    padding: 21.5px 7.5px 21.5px 7.5px;
+    color: black;
+}
+

@@ -1,0 +1,11 @@
+.Recipe_grid {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+

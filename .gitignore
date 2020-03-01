@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#supporting files
+/recipes_supporting_files
+
 # testing
 /coverage
 

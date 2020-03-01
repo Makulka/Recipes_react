@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Home from './containers/Home/Home';
+import Layout from './hoc/Layout/Layout';
+import FullRecipe from './containers/FullRecipe/FullRecipe';
+import {Switch, Route} from 'react-router-dom';
+import NewRecipe from './containers/NewRecipe/NewRecipe';
+import AllRecipes from './containers/AllRecipes/AllRecipes';
+import {connect} from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    let id = null;
+      if (this.props.selectedRecipe) {
+        id = this.props.selectedRecipe.id;
+      }
+    return (
+      <React.Fragment>      
+          <Layout>
+            <Switch>
+              <Route path="/recipes/new" component={NewRecipe} />
+              <Route path={'/recipes/' + id} component={FullRecipe} />
+              <Route path="/recipes" exact component={AllRecipes} />
+              <Route path="/" exact component={Home} />
+            </Switch>
+          </Layout>
+      </React.Fragment>    
+    );
+  }  
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    selectedRecipe: state.selectedRecipe
+  }
+}
+export default connect(mapStateToProps)(App);
+
+ 
+
+

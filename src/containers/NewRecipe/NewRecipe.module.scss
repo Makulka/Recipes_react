@@ -1,0 +1,50 @@
+$primary-color: #CCCCCC;
+
+.NewRecipe {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid $primary-color;
+    padding: 2rem;
+    h1 {
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid $primary-color;
+    }
+    h2 {
+        text-transform: uppercase;
+    }
+    p {
+        padding-bottom: 10px;
+    }
+    input, textarea {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    button {
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        padding: 7px;
+        background-color: $primary-color;
+        color: #424242;
+        border-radius: 5px;
+        &:focus {
+            outline: none;
+            background-color: rgb(185, 184, 184);            
+        }
+        &:active {
+            transform: translate(1px,1px);
+        }
+    }
+    ul {
+        margin: 3px;
+        padding:0;
+    }
+    p {
+        font-size: 12px;
+    }
+}
